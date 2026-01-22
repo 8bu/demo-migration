@@ -1,0 +1,20 @@
+{
+  "name": "module-federation-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nuxt 4 Shell + Nuxt 2 Legacy connected via Module Federation",
+  "scripts": {
+    "install:all": "npm run install:legacy && npm run install:shell",
+    "install:legacy": "cd apps/legacy && npm install",
+    "install:shell": "cd apps/shell && npm install",
+    "dev": "npm run dev:legacy & npm run dev:shell",
+    "dev:shell": "cd apps/shell && npm run dev",
+    "dev:legacy": "cd apps/legacy && npm run dev",
+    "build": "bash scripts/build.sh",
+    "build:shell": "cd apps/shell && npm run build",
+    "build:legacy": "cd apps/legacy && npm run build"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    @apply shell-scroll-smooth;
+  }
+
+  body {
+    @apply shell-font-sans shell-antialiased;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .shell-nav-link {
+    @apply shell-flex shell-items-center shell-gap-3 shell-px-4 shell-py-3 shell-text-gray-300 shell-rounded-lg shell-transition-colors shell-duration-200;
+  }
+
+  .shell-nav-link:hover {
+    @apply shell-bg-sidebar-hover shell-text-white;
+  }
+
+  .shell-nav-link.active {
+    @apply shell-bg-sidebar-active shell-text-white;
+  }
+
+  .shell-card {
+    @apply shell-bg-white shell-rounded-xl shell-shadow-sm shell-border shell-border-gray-200 shell-p-6;
+  }
+}

@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+deploy/
+dist/
+.output/
+.nuxt/
+
+# Auto-generated federation wrappers
+apps/legacy/remote-entries/.generated/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+
+# Misc
+*.local
+PLAN.md
+.playwright-mcp/
+
+# Claude
+.claude/
+CLAUDE.md
